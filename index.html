@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script defer src="index.js"></script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="bg-[#0F1424] font-['Rubik'] text-lg">
+    <main
+      class="w-[90%] mx-auto my-[20vh] grid grid-cols-1 sm:grid-cols-4 gap-8"
+    >
+      <div class="profile-card bg-[#1C1F4A] rounded-xl">
+        <div
+          class="name-tag flex items-center sm:items-start content-center sm:flex-col gap-5 sm:gap-10 bg-[#5847EB] p-10 rounded-xl"
+        >
+          <div
+            class="img-container rounded-full w-[20%] sm:w-[50%] border-4 border-white"
+          >
+            <img src="images/image-jeremy.png" alt="" />
+          </div>
+          <div class="name sm:mb-12">
+            <p class="text-[#BDC1FF]">Report for</p>
+            <h1 class="text-white text-2xl sm:text-3xl">Jeremy Robson</h1>
+          </div>
+        </div>
+        <div
+          class="time-options flex sm:flex-col justify-between sm:gap-3 text-[#6F76C8] font-light px-10 py-5"
+        >
+          <a
+            class="time daily"
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Daily</a
+          >
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="time weekly font-normal"
+            >Weekly</a
+          >
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="time monthly"
+            >Monthly</a
+          >
+        </div>
+      </div>
+      <div
+        class="time-cards grid grid-cols-1 sm:grid-cols-3 sm:col-span-3 gap-8"
+      >
+        <!-- <div class="time-card w-full h-52 sm:h-60 rounded-xl work relative">
+          <div
+            class="details bg-[#1C1F4A] hover:bg-[#6F76C8] w-full px-10 py-8 rounded-xl absolute bottom-[-1px]"
+          >
+            <div class="heading flex justify-between items-center">
+              <h1 class="text-white font-medium text-2xl">Work</h1>
+              <img
+                class="sm:opacity-50 hover:opacity-100"
+                src="images/icon-ellipsis.svg"
+                alt=""
+              />
+            </div>
+            <div
+              class="time-spent mt-4 flex sm:flex-col justify-between items-cente sm:items-start"
+            >
+              <h1 class="text-white text-3xl sm:text-4xl font-normal">32hrs</h1>
+              <p class="text-[#BDC1FF]">Last Week-<span>36hrs</span></p>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="time-card h-52 w-full sm:h-60 rounded-xl work relative">
+          <div
+            class="details bg-[#1C1F4A] w-full px-10 py-8 rounded-xl absolute bottom-[-1px]"
+          >
+            <div class="heading flex justify-between items-center">
+              <h1 class="text-white font-medium text-2xl">Work</h1>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div
+              class="time-spent mt-4 flex sm:flex-col justify-between items-cente sm:items-start"
+            >
+              <h1 class="text-white text-3xl sm:text-4xl font-normal">32hrs</h1>
+              <p class="text-[#6F76C8]">Last Week-<span>36hrs</span></p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </main>
+    Work 5hrs
+    <!-- daily -->
+    Previous - 7hrs
+    <!-- daily -->
+    32hrs
+    <!-- weekly -->
+    Previous - 36hrs
+    <!-- weekly -->
+    103hrs
+    <!-- monthly -->
+    Previous - 128hrs
+    <!-- monthly -->
+
+    Play 1hr
+    <!-- daily -->
+    Previous - 2hrs
+    <!-- daily -->
+    10hrs
+    <!-- weekly -->
+    Previous - 8hrs
+    <!-- weekly -->
+    23hrs
+    <!-- monthly -->
+    Previous - 29hrs
+    <!-- monthly -->
+
+    Study 0hrs
+    <!-- daily -->
+    Previous - 1hr
+    <!-- daily -->
+    4hrs
+    <!-- weekly -->
+    Previous - 7hrs
+    <!-- weekly -->
+    13hrs
+    <!-- monthly -->
+    Previous - 19hrs
+    <!-- monthly -->
+
+    Exercise 1hr
+    <!-- daily -->
+    Previous - 1hr
+    <!-- daily -->
+    4hrs
+    <!-- weekly -->
+    Previous - 5hrs
+    <!-- weekly -->
+    11hrs
+    <!-- monthly -->
+    Previous - 18hrs
+    <!-- monthly -->
+
+    Social 1hr
+    <!-- daily -->
+    Previous - 3hrs
+    <!-- daily -->
+    5hrs
+    <!-- weekly -->
+    Previous - 10hrs
+    <!-- weekly -->
+    21hrs
+    <!-- monthly -->
+    Previous - 23hrs
+    <!-- monthly -->
+
+    Self Care 0hrs
+    <!-- daily -->
+    Previous - 1hr
+    <!-- daily -->
+    2hrs
+    <!-- weekly -->
+    Previous - 2hrs
+    <!-- weekly -->
+    7hrs
+    <!-- monthly -->
+    Previous - 11hrs
+    <!-- monthly -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
